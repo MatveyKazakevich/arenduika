@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero img {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 700px;
+    margin-right: 130px;
+    z-index: 1;
+}
+
+.wrapper {
+    background: rgb(36,35,108);
+    background: linear-gradient(120deg, rgba(36,35,108,1) 17%, rgba(230,200,49,1) 77%);
+    color:#FFFFFF;
+}
+
+.container {
+    width: 1800зx;
+    margin: 0 auto;
+    z-index: 2;
+}    
+
+header {
+    padding: 35px 0;
+    background: #161621;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 710px;
+
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 23px;
+    color: #923097;
+    margin-left: 30px;
+}
+
+header nav {
+    float: right;
+    width: 55%;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 auto; 
+    margin-right: 50px;
+    float: right; 
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #803684;
+}
+
+header nav ul li.btn a {
+    background: #803684;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #4a0b4e;
+}
+
+.hero {
+    padding-bottom: 100px;
+    padding-left: 15px;  
+}
+
+.hero--info {
+    width: 700px;
+    margin-left: 50px;
+    padding-top: 110px;
+}
+
+.hero--info h1 {
+    padding: 30px;
+    padding-top: 250px;
+}
+
+.hero--info p {
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.hero--foot {
+    margin-left: 15px;
+    padding-top: 350px;
+}
+
+.hero--info h1 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.hero--foot--work {
+    margin-top: 150px;
+    float: right;
+    width: 750px;
+}
+
+.hero--foot--work h2 {
+    margin-bottom: 25px;
+}
+
+.hero--foot--work ol li {
+    line-height: 2;
+}
+
+.hero--foot--aboutus {
+    margin-top: 150px;
+    width: 700px;
+    margin-left: 15px;
+    float: left;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.hero--foot--aboutus h2 {
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.hero--foot--aboutus ul li {
+    line-height: 2;
+}
+
+.foot p {
+    float: bottom;
+    margin-left: 35px;
+}
+
+footer {
+    margin-top: 480px;
+    padding: 35px 0;
+    background: #161621;
+}
+
