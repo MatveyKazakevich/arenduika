@@ -88,7 +88,7 @@ a {
     flex-direction: column;  
 }
 
-.a {
+.hero__hello {
     display: flex;
     flex-direction: row;
 }
@@ -111,25 +111,24 @@ a {
     margin-left: 15px;
 }
 
-.hero__foot {
-    margin-left: 15px;
-    padding-top: 350px;
+
+.hero__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .hero__steps {
     margin-top: 150px;
-    width: 750px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     line-height: 2;
+    margin-left: 40px;
 }
 
 .hero__about {
     margin-top: 150px;
-    width: 700px;
     margin-left: 15px;
-    float: left;
     margin-bottom: 25px;
-    margin-left: 15px;
 }
 
 .hero__about h2 {
