@@ -115,29 +115,13 @@ a {
 .hero__footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-.hero__steps {
+    justify-content: space-around;
     margin-top: 150px;
-    margin-bottom: 30px;
+}
+
+.hero__about, .hero__steps {
     line-height: 2;
-    margin-left: 40px;
-}
-
-.hero__about {
-    margin-top: 150px;
-    margin-left: 15px;
-    margin-bottom: 25px;
-}
-
-.hero__about h2 {
-    margin-bottom: 25px;
-    margin-left: 15px;
-}
-
-.hero__about ul li {
-    line-height: 2;
+    width: 47%;
 }
 
 .foot p {
@@ -146,7 +130,7 @@ a {
 }
 
 footer {
-    margin-top: 480px;
+    margin-top: 180px;
     padding: 35px 0;
     background: #161621;
 }
