@@ -12,35 +12,12 @@ body {
     font-weight: 300;
     font-style: normal;
 }
-  
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-}
-
-.hero img {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 700px;
-    margin-right: 130px;
-    z-index: 1;
-}
 
 .wrapper {
     background: rgb(36,35,108);
     background: linear-gradient(120deg, rgba(36,35,108,1) 17%, rgba(230,200,49,1) 77%);
     color:#FFFFFF;
 }
-
-.container {
-    width: 1800зx;
-    margin: 0 auto;
-    z-index: 2;
-}    
 
 header {
     padding: 35px 0;
@@ -50,7 +27,8 @@ header {
     right: 0px;
     left: 0px;
     bottom: 710px;
-
+    margin: 0 auto;
+    z-index: 2;
 }
 
 header .logo {
@@ -98,53 +76,54 @@ header nav ul li.btn a {
 header nav ul li.btn a:hover {
     background: #4a0b4e;
 }
+  
+a {
+    text-decoration: none;
+}
 
 .hero {
     padding-bottom: 100px;
-    padding-left: 15px;  
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;  
 }
 
-.hero--info {
+.a {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero__info {
     width: 700px;
     margin-left: 50px;
     padding-top: 110px;
 }
 
-.hero--info h1 {
+.hero__info h1 {
     padding: 30px;
     padding-top: 250px;
-}
-
-.hero--info p {
-    margin-bottom: 25px;
-    margin-left: 15px;
-}
-
-.hero--foot {
-    margin-left: 15px;
-    padding-top: 350px;
-}
-
-.hero--info h1 {
     font-size: 24px;
     font-weight: 900;
 }
 
-.hero--foot--work {
-    margin-top: 150px;
-    float: right;
-    width: 750px;
-}
-
-.hero--foot--work h2 {
+.hero__info p {
     margin-bottom: 25px;
+    margin-left: 15px;
 }
 
-.hero--foot--work ol li {
+.hero__foot {
+    margin-left: 15px;
+    padding-top: 350px;
+}
+
+.hero__steps {
+    margin-top: 150px;
+    width: 750px;
+    margin-bottom: 25px;
     line-height: 2;
 }
 
-.hero--foot--aboutus {
+.hero__about {
     margin-top: 150px;
     width: 700px;
     margin-left: 15px;
@@ -153,12 +132,12 @@ header nav ul li.btn a:hover {
     margin-left: 15px;
 }
 
-.hero--foot--aboutus h2 {
+.hero__about h2 {
     margin-bottom: 25px;
     margin-left: 15px;
 }
 
-.hero--foot--aboutus ul li {
+.hero__about ul li {
     line-height: 2;
 }
 
@@ -173,3 +152,10 @@ footer {
     background: #161621;
 }
 
+.hero__img img {
+    max-width: 100%;
+    top: 80px;
+    width: 700px;
+    margin-right: 130px;
+    z-index: 1;
+}
