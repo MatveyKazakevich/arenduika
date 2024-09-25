@@ -85,23 +85,22 @@ a {
     padding-bottom: 100px;
     padding-left: 15px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 .hero__hello {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-top: 100px;
 }
 
 .hero__info {
-    width: 700px;
     margin-left: 50px;
-    padding-top: 110px;
 }
 
 .hero__info h1 {
     padding: 30px;
-    padding-top: 250px;
     font-size: 24px;
     font-weight: 900;
 }
@@ -110,7 +109,6 @@ a {
     margin-bottom: 25px;
     margin-left: 15px;
 }
-
 
 .hero__footer {
     display: flex;
@@ -135,10 +133,7 @@ footer {
     background: #161621;
 }
 
-.hero__img img {
-    max-width: 100%;
-    top: 80px;
-    width: 700px;
-    margin-right: 130px;
+.hero__image {
+    margin-left: 100px;
     z-index: 1;
 }
