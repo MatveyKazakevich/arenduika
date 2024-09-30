@@ -14,14 +14,14 @@ body {
 }
 
 .wrapper {
-    background: rgb(36,35,108);
-    background: linear-gradient(120deg, rgba(36,35,108,1) 17%, rgba(230,200,49,1) 77%);
+    background: rgb(33,124,163);
+    background: linear-gradient(120deg, rgba(33,124,163,1) 25%, rgba(226,153,48,1) 67%);
     color:#FFFFFF;
 }
 
 header {
     padding: 35px 0;
-    background: #161621;
+    background: #32384d;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -36,9 +36,13 @@ header .logo {
     justify-content:flex-start;
     text-transform: uppercase;
     font-size: 1.3vw;
-    transition: all 0.3s ease;
-    color: #923097;
+    transition: all 0.5s ease;
+    color: #211f30;
     margin-left: 2%;
+}
+
+header .logo a{
+    color: #a6a1c9;
 }
 
 header nav {
@@ -68,18 +72,18 @@ header nav ul li a {
 }
 
 header nav ul li:not(.active):not(.btn) a:hover {
-    border-bottom: 5px solid #803684;
+    border-bottom: 5px solid #32384d;
 }
 
 header nav ul li.btn a {
-    background: #803684;
+    background: #211f30;
     padding: 9px 20px;
     border-radius: 5px;
     transition: all 500ms ease;
 }
 
 header nav ul li.btn a:hover {
-    background: #4a0b4e;
+    background: #2c2e32;
 }
   
 a {
@@ -121,6 +125,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 150px;
+    flex-wrap: wrap;
 }
 
 .hero__about, .hero__steps {
