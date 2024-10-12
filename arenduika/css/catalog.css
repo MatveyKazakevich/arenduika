@@ -74,19 +74,27 @@ body {
 .catalog-container h2 {
   display: flex;
   justify-content: center;
-  padding: 25px 10px;
+  text-align: center;
+  padding-bottom: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .catalog-items {
-  width: 300px;
   min-height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
   flex-wrap: nowrap;
-  gap: 250px;
-  margin: 50px 50px;
   white-space: nowrap;
+}
+
+.catalog-items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .Tourist-top img,
@@ -94,15 +102,34 @@ body {
 .PowerTools-top img,
 .Kids-top img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .items-Tourist,
 .items-AudioEquip,
 .items-PowerTools,
 .items-Kids {
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    margin: 0 30px;
+    background: #c4dfe6;
+    padding: 20px;
+    border: 1px solid #f1e7e8;
+    text-align: center;
     
+}
+
+.Kids-bottom,
+.PowerTools-bottom,
+.AudioEquip-bottom,
+.Tourist-bottom {
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+.Kids-bottom a:focus,
+.PowerTools-bottom a:focus,
+.AudioEquip-bottom a:focus,
+.Tourist-bottom a:focus {
+  color: #10100f;
 }
