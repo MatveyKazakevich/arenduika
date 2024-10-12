@@ -131,5 +131,9 @@ body {
 .PowerTools-bottom a:focus,
 .AudioEquip-bottom a:focus,
 .Tourist-bottom a:focus {
+  color: #3f4c52;
+}
+
+.product_link {
   color: #10100f;
 }
