@@ -23,24 +23,24 @@
                     </ul>
                 </nav>
             </header>
-            <div class="autorizeform">
-                <div class="reg-form">
-                    <form action="register.html" method="post">
-                        <input type="text" class="reg-input" placeholder="login" name="login">
-                        <input type="text" class="reg-input" placeholder="password" name="pass">
-                        <input type="text" class="reg-input" placeholder="repeat passwor" name="repeatpass">
-                        <input type="text" class="reg-input" placeholder="email" name="email">
-                        <button type="submit">Зарегистрироваться</button>
+            <main>
+                <div class="autorization">
+                    <form>
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Enter Email" name="email" required />
+        
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter Password" name="password" required />
+        
+                        <button type="submit" class="login-btn">Sign in</button>
+                        <div class="links">
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">У вас нет аккаунта?</a>
+                        </div>
                     </form>
                 </div>
-                <div class="login-form">
-                    <form action="login.html" method="post">
-                        <input type="text" class="login-input" placeholder="login" name="login">
-                        <input type="text" class="login-input" placeholder="password" name="pass">
-                        <button type="submit">Войти</button>
-                    </form>
-                </div>
-            </div>
+        
+            </main>
         </div>
     </body>
 </html>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine&family=SUSE:wght@100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -84,39 +85,91 @@ body {
   background-color: #599ba8;
 }
 
-.reg-form,
-.login-form {
+main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #599ba8;
-    flex-direction: column;
+    place-items: center;
+    background: #f6f6f6;
+    width: min(700px, 95%);
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-bottom: 10%;
 }
 
-.autorizeform {
-    position: fixed;
-    top: 190px;
+.autorization {
+    padding: 60px;
+}
+
+/* Button Group */
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    outline: 0;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 4px 0 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+input:focus {
+    border: 2px solid #000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #000;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Login Button */
+
+.login-btn {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 24px;
+    margin: 12px 0 24px;
+    border: 2px solid #6b7280;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.login-btn:hover {
+    background-color: #000;
+    color: #eee;
+}
+
+/* Links */
+
+.links {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
-    
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.reg-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid #ccc;
-    border-radius: 9px;
-    background-color: #9ff6e8;
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
-.login-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid #ccc;
-    border-radius: 9px;
-    background-color: #9ff6e8;
+.autorization a {
+    color: #000;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: rgb(13, 133, 185);
 }
