@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
 * {
-  /* 
-  need to sum all paddings  and margins into height
-  ex: height:80, padding:20 (this padding will be inside height)
-  */
   box-sizing: border-box;
   margin: 0;
 }
@@ -28,7 +24,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #599ba8;
+  background: rgb(89,155,168);
+  background: linear-gradient(112deg, rgba(89,155,168,1) 22%, rgba(48,157,226,1) 67%);
   color: #ffffff;
 }
 
@@ -103,6 +100,7 @@ body {
   column-gap: 30px;
   background-color: #c4dfe6;
   color: #10100f;
+  border-radius: 12px;
 }
 
 /* main section 1 */
@@ -116,6 +114,12 @@ body {
 .image-container {
   width: 30%;
   align-self: flex-end;
+}
+
+@media (max-width: 900px) {
+  img {
+      display: none; /* Скрывает изображение */
+  }
 }
 .image {
   width: 100%;
@@ -150,4 +154,18 @@ body {
   display: flex;
   justify-content: center;
   padding: 25px 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+      font-size: 10px;
+  }
+
+  .header-logo-name{
+    font-size: 10px;
+  }
+
+  .header-container {
+    padding: 10px;
+  }
 }

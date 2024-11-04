@@ -119,10 +119,6 @@ body {
   color: #00000086;
 }
 
-.sign-in-description a {
-  color: #34bcaa;
-}
-
 .sign-up {
   margin-left: 10px;
   color: #34bcaa;
@@ -141,7 +137,7 @@ body {
 }
 
 .form-input-container {
-  row-gap: 10px;
+    row-gap: 15px;
 }
 
 .input-label {

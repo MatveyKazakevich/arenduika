@@ -24,7 +24,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #599ba8;
+  background: rgb(89,155,168);
+  background: linear-gradient(112deg, rgba(89,155,168,1) 22%, rgba(48,157,226,1) 67%);
   color: #ffffff;
 }
 
@@ -83,69 +84,42 @@ body {
   background-color: #599ba8;
 }
 
-.catalog-container h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 80px;
-  padding-left: 10px;
-  padding-right: 10px;
+h2 {
+  align-self: center;
+  margin: 20px;
 }
 
-.catalog-items {
-  min-height: 350px;
+.catalog-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: nowrap;
-  white-space: nowrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.catalog-items a {
+.card-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 30px;
+  justify-content: space-around;
+  height: 350px;
+  width: 300px;
+  background-color: #c4dfe6;
+  box-shadow: 1px 2px 20px #413e3e;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
 }
 
-.Tourist-top img,
-.AudioEquip-top img,
-.PowerTools-top img,
-.Kids-top img {
-    width: 100%;
-    height: 100%;
+.card-image {
+  width: 90%;
+  height: auto;
 }
 
-.items-Tourist,
-.items-AudioEquip,
-.items-PowerTools,
-.items-Kids {
-    width: 300px;
-    margin: 0 30px;
-    background: #c4dfe6;
-    padding: 20px;
-    border: 1px solid #f1e7e8;
-    text-align: center;
-    
-}
-
-.Kids-bottom,
-.PowerTools-bottom,
-.AudioEquip-bottom,
-.Tourist-bottom {
-  text-transform: uppercase;
-  font-weight: bold;
-  
-}
-
-.Kids-bottom a:focus,
-.PowerTools-bottom a:focus,
-.AudioEquip-bottom a:focus,
-.Tourist-bottom a:focus {
-  color: #3f4c52;
-}
-
-.product_link {
+.card-description {
   color: #10100f;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 20px 2px #34bcaa;
 }
