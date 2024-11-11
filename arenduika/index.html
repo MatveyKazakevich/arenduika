@@ -6,7 +6,7 @@
     <title>Arenduika</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" href="shopping_cart.ico" type=”image/x-icon”>
-    <script src="script.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -14,17 +14,22 @@
     <div class="wrapper">
       <header class="header-container">
         <div class="header-logo">
-          <img src="shopping_cart.ico" alt="" class="image" />
-          <a href="./index.html" class="header-logo-name">Arenduika.by</a>
+            <img src="shopping_cart.ico" alt="" class="image" />
+            <a href="./index.html" class="header-logo-name">Arenduika.by</a>
         </div>
         <nav class="navigation-wrapper">
-          <ul class="navigation-container">
-            <li class="link"><a href="/arenduika/arenduika/">О нас </a></li>            
-            <li class="link"><a href="catalog.html">Каталог</a></li>
-            <li class="link"><a href="autorize.html">Профиль</a></li>
-          </ul>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+            <ul class="navigation-container" id="nav-list">
+                <li class="link"><a href="/arenduika/arenduika/">О нас</a></li>
+                <li class="link"><a href="catalog.html">Каталог</a></li>
+                <li class="link"><a href="autorize.html">Профиль</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
       <div class="content-container">
         <h1>Добро пожаловать на сайт аренды товаров!</h1>
@@ -90,5 +95,6 @@
         <p>© 2024 Arenduika. All Rights Reserved by KZ-MG</p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

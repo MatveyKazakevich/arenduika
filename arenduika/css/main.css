@@ -67,7 +67,7 @@ body {
 .navigation-container {
   display: flex;
   column-gap: 30px;
-  /* font-size: 14px; */
+  list-style-type: none;
   font-size: 1vw;
   transition: all 0.3s ease;
 }
@@ -82,6 +82,28 @@ body {
 }
 .navigation-container li a:hover {
   background-color: #599ba8;
+}
+
+.burger-menu {
+  display: none; /* Скрываем бургер-меню по умолчанию */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger {
+  width: 30px;
+  height: 4px;
+  background-color: #e6e5e5; /* Цвет бургер-меню */
+  margin: 4px 0; /* Отступы между полосками */
+}
+
+.navigation-container .link a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navigation-wrapper {
+  position: relative;
 }
 
 /* content-container */
@@ -121,14 +143,61 @@ body {
   align-self: flex-end;
 }
 
+.image {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 900px) {
   img {
       display: none; /* Скрываем изображение */
   }
-}
-.image {
-  width: 100%;
-  height: auto;
+
+  .navigation-container {
+    display: none; /* Скрываем меню по умолчанию на мобильных устройствах */
+    flex-direction: column; /* Меню будет вертикальным */
+    position: relative; /* Позиционируем меню относительно родителя */
+    background-color: white; /* Цвет фона меню */
+    width: 100%; /* Ширина меню */
+    top: 50px; /* Отступ сверху */
+    left: 0; /* Прижимаем к левому краю */
+    z-index: 1000; /* На переднем плане */
+  }
+
+  .navigation-container.active {
+      display: flex; /* Показываем меню, когда оно активно */
+  }
+
+  .burger-menu {
+      display: flex; /* Показываем бургер-меню на мобильных устройствах */
+  }
+
+  .content-container {
+    padding: 20px;
+  }
+
+  .content-container h1 {
+    font-size: medium;
+  }
+
+  .list-container {
+    padding: 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .main-content p {
+    font-size: small;
+  }
+
+  .section-how,
+  .section-why {
+    margin: 0;
+    padding: 10px;
+  }
 }
 
 /* main section 2 */
@@ -146,20 +215,6 @@ body {
   row-gap: 10px;
 }
 
-.catalog-items {
-  width: 225px;
-  min-height: 350px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.catalog-container h2 {
-  display: flex;
-  justify-content: center;
-  padding: 25px 10px;
-}
 
 @media screen and (max-width: 600px) {
   body {

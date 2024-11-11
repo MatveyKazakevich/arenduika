@@ -86,7 +86,7 @@ body {
 
 .main-catalog {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 20px;
     padding-bottom: 420px;
     margin-left: 140px;
