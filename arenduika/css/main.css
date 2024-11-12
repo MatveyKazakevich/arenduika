@@ -154,14 +154,14 @@ body {
   }
 
   .navigation-container {
-    display: none; /* Скрываем меню по умолчанию на мобильных устройствах */
-    flex-direction: column; /* Меню будет вертикальным */
-    position: relative; /* Позиционируем меню относительно родителя */
-    background-color: white; /* Цвет фона меню */
-    width: 100%; /* Ширина меню */
-    top: 50px; /* Отступ сверху */
-    left: 0; /* Прижимаем к левому краю */
-    z-index: 1000; /* На переднем плане */
+    display: none;
+    flex-direction: column; 
+    position: relative; 
+    background-color: white; 
+    width: 100%;
+    top: 50px;
+    left: 0; 
+    z-index: 1000;
   }
 
   .navigation-container.active {
