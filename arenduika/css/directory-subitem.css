@@ -84,21 +84,29 @@ body {
   background-color: #599ba8;
 }
 
+.discription {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.form-backbtn a {
+  float: left;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.form-backbtn img {
+  width: 38px;
+}
+
 .main-catalog {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 280px;
-  margin-right: 280px;
-  border-radius: 15px;
-  background-color: #c4dfe6;
-  min-width: 500px;
 }
 
 .catal-card {
@@ -121,13 +129,12 @@ body {
 }
 
 .catal-card h3 {
-  
-  padding-top: 25px;
-  padding-bottom: 15px;
+  margin: auto;
+  padding: auto;
   color: #10100f;
-  white-space: normal; /* Позволяет переносить текст */
-  overflow-wrap: break-word; /* Перенос длинных слов */
-  max-width: 100%; /* Ограничивает ширину заголовка */
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 .catal-card p {
   text-wrap: wrap;
@@ -139,15 +146,16 @@ body {
 .btn-order {
   display: flex;
   justify-content: center;
-  margin-top: auto; /* Перемещает кнопку вниз карточки */
+  margin-top: auto;
   padding: 8px;
   padding-left: 122px;
   padding-right: 122px;
   background-color: #34bcaa;
   border-radius: 8px;
-  transition: background-color .3s ease-in-out; /* Упрощает анимацию */
+  transition: background-color .3s ease-in-out;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .btn-order:hover {
