@@ -1,77 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arenduika</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/autorize.css" />
-    <link rel="icon" href="shopping_cart.ico" type=”image/x-icon”>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="script.js"></script>
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <header class="header-container">
-        <div class="header-logo">
-          <img src="shopping_cart.ico" alt="" class="image" />
-          <a href="./index.html" class="header-logo-name">Arenduika.by</a>
-        </div>
-
-        <div class="navbar-burger-item" id="navbar-burger-item">
-          <a
-            class="navbar-burger-icon flex-column"
-            href="javascript:void(0);"
-            id="navbar-burger-icon"
-          >
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </a>
-        </div>
-        <nav class="navbar" id="navbar">
-          <ul class="navbar-items">
-            <li class="link"><a href="index.html">Главная</a></li>
-            <li class="link"><a href="catalog.html">Каталог</a></li>
-            <li class="link"><a href="autorize.html">Профиль</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="profile-form-container">
-        <form class="form">
-          <h2 class="form-title">Sign In</h2>
-          <small class="sign-in-description"
-            >Not registered yet?<span class="sign-up"
-              ><a href="register.html">Sign Up</a></span
-            ></small
-          >
-          <div class="separator"></div>
-          <div class="form-input-container">
-            <label for="email" class="input-label">Email:</label>
-            <input
-              type="text"
-              placeholder="Enter Email"
-              name="email"
-              required
-            />
-          </div>
-          <div class="form-input-container">
-            <label for="password" class="input-label">Password:</label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              name="password"
-              required
-            />
-          </div>
-          <button type="submit" class="submit-btn">Sign in</button>
-          <small class="sign-in-description forgot"
-            ><a href="recover.html">Forgot password?</a></small
-          >
-        </form>
-      </div>
+<div class="profile-form-container">
+  <form class="form">
+    <h2 class="form-title">Sign In</h2>
+    <small class="sign-in-description"
+      >Not registered yet?<button class="sign-up" onclick="handleSignUpClick()">Sign Up</button>
+    </small>
+    <div class="separator"></div>
+    <div class="form-input-container">
+      <label for="email" class="input-label">Email:</label>
+      <input
+        type="text"
+        placeholder="Enter Email"
+        name="email"
+        required
+      />
     </div>
-  </body>
-</html>
+    <div class="form-input-container">
+      <label for="password" class="input-label">Password:</label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        required
+      />
+    </div>
+    <button type="submit" class="submit-btn">Sign in</button>
+    <button class="sign-in-description forgot" 
+      onclick="handleForgotClick()">Forgot password?</button>
+  </form>
+</div>
+<script src="script.js"></script>

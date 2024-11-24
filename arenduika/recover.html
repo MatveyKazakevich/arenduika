@@ -1,61 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arenduika</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/recover.css" />
-    <link rel="icon" href="shopping_cart.ico" type=”image/x-icon”>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="script.js"></script>
-  </head>
-
-    <body>
-        <div class="wrapper">
-          <header class="header-container">
-            <div class="header-logo">
-              <img src="shopping_cart.ico" alt="" class="image" />
-              <a href="./index.html" class="header-logo-name">Arenduika.by</a>
-            </div>
-    
-            <div class="navbar-burger-item" id="navbar-burger-item">
-              <a
-                class="navbar-burger-icon flex-column"
-                href="javascript:void(0);"
-                id="navbar-burger-icon"
-              >
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </a>
-            </div>
-            <nav class="navbar" id="navbar">
-              <ul class="navbar-items">
-                <li class="link"><a href="index.html">Главная</a></li>
-                <li class="link"><a href="catalog.html">Каталог</a></li>
-                <li class="link"><a href="autorize.html">Профиль</a></li>
-              </ul>
-            </nav>
-          </header>
-            <div class="profile-form-container">
-                <form class="form"> 
-                  <div class="form-backbtn">
-                    <a href="./autorize.html">
-                      <img src="./img/backbtn.png" alt="" class="image" />
-                    </a>
-                    <div class="form-title">
-                      <h2>Recover</h2>
-                    </div>
-                  </div>
-                  <div class="form-input-container">
-                    <label for="email" class="input-label">Email:</label>
-                    <input type="text" placeholder="Enter Email" name="email" required />
-                  </div>
-                  <button type="submit" class="submit-btn">Send Code</button>
-                </form>
-            </div>
+<div class="profile-form-container">
+    <form class="form"> 
+      <div class="form-back">
+        <a href="#" onclick="handleBackBtnClick()">
+          <img src="./img/backbtn.png" alt="" class="image" />
+        </a>
+        <div class="form-title">
+          <h2>Recover</h2>
         </div>
-    </body>
-</html>
+      </div>
+      <div class="separator"></div>
+      <div class="form-input-container">
+        <label for="email" class="input-label">Email:</label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+      </div>
+      <button type="submit" class="submit-btn">Send Code</button>
+    </form>
+</div>
